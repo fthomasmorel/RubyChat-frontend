@@ -1,0 +1,14 @@
+<div ng-controller="ChatController">
+    <ol class="chat">
+      <li ng-repeat="message in messages" class="{{ getClassForMessage(message) }}">
+        <div class="msg">
+          <p>{{ message.content }}</p>
+          <time class="username">{{ message.username }}</time>
+        </div>
+      </li>
+    </ol>
+    <div id="chatBar">
+      <input class="textarea" type="text" ng-model="messageContent" placeholder="Type here!"/>
+      <button class="send-btn btn btn-success" ng-click="sendMessage()">Send</button>
+    </div>
+</div>
