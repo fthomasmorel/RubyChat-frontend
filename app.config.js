@@ -1,6 +1,6 @@
 var app = angular.module('RubyChat', ['ngRoute','ngResource']);
 
 app.constant('configuration', {
-  api: 'http://localhost:8080',
+  api: 'http://SERVER_ADDR:9000/api',
   baseUrl: '/web',
 });

@@ -8,7 +8,7 @@
       </li>
     </ol>
     <div id="chatBar">
-      <input class="textarea" type="text" ng-model="messageContent" placeholder="Type here!"/>
+      <input class="textarea" type="text" ng-model="messageContent" placeholder="Type here!" ng-enter="sendMessage()"/>
       <button class="send-btn btn btn-success" ng-click="sendMessage()">Send</button>
     </div>
 </div>

@@ -1,5 +1,4 @@
 app.controller('LoginController', ['$scope', '$resource', '$location', 'Session', 'configuration', function($scope, $resource, $location, Session, configuration) {
-  var Login = $resource(configuration.api + '/login/association');
 
   if(Session.getUsername() == '' || Session.getUsername() == null){
     $location.path('/')
